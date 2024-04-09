@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('Визуализация трехмерных данных')
-
+st.write('Трёхмерные данные визуализируются аналогично')
 st.markdown("""
 1. Импорт данных:  Это может быть файл данных в формате VTK, STL, PLY, OBJ, и других форматах, поддерживаемых ParaView.
 
@@ -19,7 +19,7 @@ st.markdown("""
 
 #st.video('C:\ParaView\Gif 2.mp4', caption='Local Video')
 
-video_file = open('pages/img/vid.mp4', 'rb')
+video_file = open('pages/img/volcano.mp4', 'rb')
 video_bytes = video_file.read()
 
-st.video(video_bytes)
+st.video(video_bytes,caption='Пример анимации вулканического дыма')
