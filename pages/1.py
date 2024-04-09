@@ -6,7 +6,7 @@ def show_title():
 # Функция для отображения раздела "Общая характеристика ПО"
 def show_overview():
     st.title("Общая характеристика ПО")
-    image = open('pages/pics/1.png', 'rb').read()
+    image = open('pages/img/1.png', 'rb').read()
 
     # Вставка изображения
     st.image(image, use_column_width=True)

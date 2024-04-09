@@ -19,7 +19,7 @@ st.markdown("""
 
 #st.video('C:\ParaView\Gif 2.mp4', caption='Local Video')
 
-video_file = open('pages/pics/vid.mp4', 'rb')
+video_file = open('pages/img/vid.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
