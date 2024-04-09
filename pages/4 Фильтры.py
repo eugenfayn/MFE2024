@@ -37,7 +37,7 @@ for file_, filter in f_images.items():
     image = open(f'pages/img/{file_}.png', 'rb').read()
     st.image(image)
     st.write(f"**{filter[0]}:** {filter[1]}")
-
+st.divider()
 st.write("Но в панели **Filters** есть и некоторые другие:")
 
 # Отображение списка элементов
