@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('Визуализация трехмерных данных')
-st.write('Трёхмерные данные визуализируются аналогично')
+st.write('Трёхмерные данные визуализируются аналогично двумерным данным.')
 st.markdown("""
 1. Импорт данных:  Это может быть файл данных в формате VTK, STL, PLY, OBJ, и других форматах, поддерживаемых ParaView.
 
@@ -21,5 +21,5 @@ st.markdown("""
 
 video_file = open('pages/img/volcano.mp4', 'rb')
 video_bytes = video_file.read()
-
-st.video(video_bytes,caption='Пример анимации вулканического дыма')
+st.write('Визуализация вулканического дыма с помощью данных, импортированных из MantaFlow.')
+st.video(video_bytes)
