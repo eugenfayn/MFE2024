@@ -33,8 +33,7 @@ def show_import():
 
 def show_filtr():
     st.title("Применение Фильтров")
-    st.divider()
-    st.subtitle("""
+    st.write("""
 ParaView предоставляет множество фильтров для обработки и анализа данных:
     """)
     st.divider()
