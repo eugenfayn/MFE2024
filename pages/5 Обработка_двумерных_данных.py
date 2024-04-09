@@ -32,7 +32,7 @@ def step3():
    - **Threshold**: Классифицирует данные в соответствии с пороговыми значениями.
    """)
    image = open(f'pages/img/53.png', 'rb').read()
-   st.image(image,caption='Применение фильтра **Slice**')
+   st.image(image,caption='Применение фильтра Slice')
    st.divider()
 
 def step4():
