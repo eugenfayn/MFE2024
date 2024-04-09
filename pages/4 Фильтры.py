@@ -35,7 +35,7 @@ st.write('**Фильтры** - это инструменты для обрабо
 st.write('К некоторым фильтрам есть быстрый доступ в панели инструментов:')
 for file_, filter in f_images.items():
     if file_=="49":
-        image = open(f'pages/img/{file_}.svg', 'rb').read()
+        image = open(f'pages/img/{file_}.png', 'rb').read()
         st.image(image,end='')
         st.write(f"**{filter[0]}:** {filter[1]}")
 
