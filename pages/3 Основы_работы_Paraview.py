@@ -33,14 +33,19 @@ def show_import():
 
 def show_filtr():
     st.title("Применение Фильтров")
-    st.write("""
+    st.divider()
+    st.subtitle("""
 ParaView предоставляет множество фильтров для обработки и анализа данных:
     """)
-    st.markdown("""
-- **1.	С выбранным в Pipeline Browser набором данных, перейдите в меню "Filters" для просмотра доступных фильтров.**
-- **2.	Выберите нужный фильтр, настройте его параметры в области Properties и нажмите "Apply" для применения.** 
-- **3.	Примененный фильтр появится в Pipeline Browser как новый объект, связанный с исходными данными.** 
-""")
+    st.divider()
+    st.write("Выбираем в Pipeline Browser набор данных, в меню Filters выбираем нужный фильтр")
+    st.divider()
+    st.write("Настраиваем выбранный фильтр в области Properties. Apply дляприменения фильтра.")
+    st.divider()
+    st.write("Фильтр отобразится в Pipeline Browser в качестве нового объекта.")
+    image = open('pages/img/3filters.png', 'rb').read()
+    st.image(image, use_column_width=True, caption="Contour1 -  фильтр")
+
 
 def show_viz():
     st.title("Настройка Визуализации")
