@@ -3,7 +3,7 @@ import streamlit as st
 st.title('ParaView')
 
 # Подзаголовок
-st.header('Проект 1')
+st.header('Проект 4')
 
 # Участники
 st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
