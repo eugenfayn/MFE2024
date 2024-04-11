@@ -1,4 +1,6 @@
 import streamlit as st
+from main import wrap
+wrap()
 
 st.title('Визуализация трехмерных данных')
 st.write('Трёхмерные данные визуализируются аналогично двумерным данным.')

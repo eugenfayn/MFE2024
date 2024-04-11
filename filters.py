@@ -1,4 +1,6 @@
 import streamlit as st
+from main import wrap
+wrap()
 
 # Список элементов
 filters = {

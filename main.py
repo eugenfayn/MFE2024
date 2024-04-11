@@ -1,7 +1,6 @@
 import streamlit as st
 from st_pages import Page, show_pages, add_page_title
-
-def main():
+def wrap():
         st.set_page_config(
                 page_title='ParaView',
                 page_icon='🔮',
@@ -15,12 +14,16 @@ def main():
         font-family: monospace;
         }
         [data-testid="stAppViewContainer]{
+        background-color: #ffffff;
         font-weight: 300;
         font-family: monospace;
         }
         </style>
         """
         st.markdown(page_bg,unsafe_allow_html=True)
+
+def main():
+        wrap()
         st.title('ParaView')
 
 
@@ -45,9 +48,9 @@ def main():
         st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
         st.write('''
                 - Устюжанин Илья :sunglasses:
-                - Файн Евгений :sunglasses:
-                - Шапаренко Владислав :sunglasses:
-                - Хасанов Максим 👟
+                - Файн Евгений 💻
+                - Шапаренко Владислав 💪
+                - Хасанов Максим 🏃
                 ''')
 
 if __name__ == "__main__":

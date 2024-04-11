@@ -1,4 +1,6 @@
 import streamlit as st
+from main import wrap
+wrap()
 
 st.title("Подготовка данных для визуализации")
 st.write("""
