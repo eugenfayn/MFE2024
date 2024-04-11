@@ -16,4 +16,5 @@ st.write('''
 - Устюжанин Илья :sunglasses:
 - Файн Евгений :sunglasses:
 - Шапаренко Владислав :sunglasses:
+- Хасанов Максим :run:
 ''')
