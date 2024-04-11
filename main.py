@@ -30,6 +30,8 @@ def main():
          ]
         )  
 
+        style = "<style>h2 {text-align: center;}</style>"
+        st.markdown(style, unsafe_allow_html=True)
         # Участники
         st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
         st.write('''
