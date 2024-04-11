@@ -6,41 +6,46 @@ def main():
                 page_title='ParaView',
                 page_icon='🔮',
         )
-        st.sidebar.title("Paraview для чайников")
+        page_bg = """
+        <style>
+        [data-testid="stAppViewContainer]{
+        background-color: #ffffff;
+        opacity: 0.4;
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 40px ), repeating-linear-gradient( #c9a9a955, #c9a9a9 );
+        }
+        </style>
+        """
         # Заголовок страницы
+        # Подзаголовок
+        st.markdown(page_bg,unsafe_allow_html=True)
         st.title('ParaView')
 
-        # Подзаголовок
+
         st.header('Проект 4. ParaView. ')
-
-
 
         show_pages(
          [
-            Page("main.py", "Введение", "🏠"),
-            Page("base_info.py", "Общая_характеристика", ":flag-np:"),
-            Page("prep_data.py", "Подготовка данных для визуализации", ":one:"),
-            Page("get_start.py", "Основы работы ParaView", ":one:"),
-            Page("filters.py", "Фильтры", ":one:"),           
-            Page("2D.py", "Обработка двухмерных данных", ":one:"),
-            Page("3D.py", "Визуализация трёхмерных данных", ":two:"),
-            Page("timee.py", "Анимация нестационарных данных", ":three:"),
-            Page("fenicss.py", "FEniCS", ":four:"),
-            Page("add_info.py", "Другие возможности ParaView", ":one:"), 
+            Page("main.py", "Введение", "🧊"),
+            Page("base_info.py", "Общая_характеристика", "🧊"),
+            Page("prep_data.py", "Подготовка данных для визуализации", "🧊"),
+            Page("get_start.py", "Основы работы ParaView", "🧊"),
+            Page("filters.py", "Фильтры", "🧊"),           
+            Page("2D.py", "Обработка двухмерных данных", "🧊"),
+            Page("3D.py", "Визуализация трёхмерных данных", "🧊"),
+            Page("timee.py", "Анимация нестационарных данных", "🧊"),
+            Page("fenicss.py", "FEniCS", "🧊"),
+            Page("add_info.py", "Другие возможности ParaView", "🧊"), 
          ]
         )  
         
-        with open('style.css') as f:
-              st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
-        col1 = st.columns(1)
-        with col1:
-                st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
-                st.write('''
+
+        st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
+        st.write('''
                 - Устюжанин Илья :sunglasses:
                 - Файн Евгений :sunglasses:
                 - Шапаренко Владислав :sunglasses:
                 - Хасанов Максим 👟
                 ''')
-                
+
 if __name__ == "__main__":
     main()
