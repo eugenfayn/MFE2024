@@ -17,3 +17,8 @@ st.markdown("""
 - **Расчет производных величин:** 
 Возможно, для анализа потребуются не только исходные данные, но и производные величины, такие как градиенты, вихри или другие физические величины.
 """)
+
+image = open('pages/img/reader.png', 'rb').read()
+st.image(image, use_column_width=True)
+image = open('pages/img/DataRepresentation2.png', 'rb').read()
+st.image(image, use_column_width=True,caption='Пример загруженных данных')

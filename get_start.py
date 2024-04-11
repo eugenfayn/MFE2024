@@ -28,8 +28,11 @@ def show_import():
     st.markdown("""
 -   Выберите **File -> Open** и найдите файл данных, который хотите визуализировать. ParaView поддерживает множество форматов данных.**
 -   После открытия файла, выбранный набор данных появится в области **Pipeline Browser**. В этот момент данные загружены, но еще не визуализированы.
--   Нажмите кнопку **Apply** в области **Properties**, чтобы отобразить данные в основной области визуализации. В зависимости от типа данных, ParaView автоматически выберет базовый метод визуализации. 
+-   Нажмите кнопку **Apply** в области **Properties**, что
+бы отобразить данные в основной области визуализации. В зависимости от типа данных, ParaView автоматически выберет базовый метод визуализации. 
 """)
+    image = open('pages/img/DataRepresentation2.png', 'rb').read()
+    st.image(image, use_column_width=True,caption='Используем уже загруженные данные')
 
 
 def show_filtr():
@@ -45,6 +48,8 @@ def show_filtr():
 """)
     image = open('pages/img/3filters.png', 'rb').read()
     st.image(image, use_column_width=True, caption="Contour1 -  фильтр")
+    image = open('pages/img/pres.png', 'rb').read()
+    st.image(image, use_column_width=True,caption='Пример применения фильтра')
 
 
 def show_viz():
