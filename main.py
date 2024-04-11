@@ -10,9 +10,11 @@ def main():
         <style>
         [data-testid="stSidebarContent"]{
         background-color: #ffffff;
-        opacity: 0.4;
-        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 40px ), repeating-linear-gradient( #c9a9a955, #c9a9a9 );
+        background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 40px ), repeating-linear-gradient( #dadada55, #dadada );
+        font-weight: 300;
+        font-family: monospace;
         }
+        font-family: monospace;
         </style>
         """
         # Заголовок страницы
