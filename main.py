@@ -1,6 +1,5 @@
 import streamlit as st
-from st_pages import Page
-
+from st-pages import Page
 
 
 st.sidebar.title("Paraview для чайников")
