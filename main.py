@@ -8,7 +8,7 @@ def main():
         )
         page_bg = """
         <style>
-        [data-testid="stAppViewContainer]{
+        [data-testid="stSidebarContent"]{
         background-color: #ffffff;
         opacity: 0.4;
         background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 40px ), repeating-linear-gradient( #c9a9a955, #c9a9a9 );
