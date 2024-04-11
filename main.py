@@ -14,11 +14,12 @@ def main():
         font-weight: 300;
         font-family: monospace;
         }
+        [data-testid="stAppViewContainer]{
+        font-weight: 300;
         font-family: monospace;
+        }
         </style>
         """
-        # Заголовок страницы
-        # Подзаголовок
         st.markdown(page_bg,unsafe_allow_html=True)
         st.title('ParaView')
 
