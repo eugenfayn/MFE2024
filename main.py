@@ -29,17 +29,17 @@ def main():
             Page("add_info.py", "Другие возможности ParaView", ":one:"), 
          ]
         )  
-
-        style = "<style>h2 {text-align: center;}</style>"
-        st.markdown(style, unsafe_allow_html=True)
-        # Участники
-        st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
-        st.write('''
-        - Устюжанин Илья :sunglasses:
-        - Файн Евгений :sunglasses:
-        - Шапаренко Владислав :sunglasses:
-        - Хасанов Максим 👟
-        ''')
-
+        
+        with open('style.css') as f:
+              st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
+        col1 = st.columns(1)
+        with col1:
+                st.subheader('Работу выполнили студенты МГУ Саров из группы ВМ-123:')
+                st.write('''
+                - Устюжанин Илья :sunglasses:
+                - Файн Евгений :sunglasses:
+                - Шапаренко Владислав :sunglasses:
+                - Хасанов Максим 👟
+                ''')
 if __name__ == "__main__":
     main()
