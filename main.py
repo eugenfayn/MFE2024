@@ -2,6 +2,10 @@ import streamlit as st
 from st_pages import Page, show_pages, add_page_title
 
 def main():
+        st.set_page_config(
+                page_title='ParaView',
+                page_icon='🔮',
+        )
         st.sidebar.title("Paraview для чайников")
         # Заголовок страницы
         st.title('ParaView')
