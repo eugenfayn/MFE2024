@@ -48,7 +48,7 @@ pyplot.show ()""")
 image = open('pages/pics/mesh.jpg', 'rb').read()
 
     # Вставка изображения
-    st.image(image, use_column_width=True)
+st.image(image, use_column_width=True)
 st.header('4. Постобработка:')
 
 st.write('Анализ полученных решений и их визуализация, возможно, с использованием сторонних инструментов, таких как Paraview.')
