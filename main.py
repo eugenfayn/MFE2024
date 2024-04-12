@@ -13,7 +13,7 @@ def wrap():
         font-weight: 300;
         font-family: monospace;
         }
-        [data-testid="stAppViewContainer"]{
+        [class="main st-emotion-cache-uf99v8 ea3mdgi8"]{
         background-color: #ffffff;
         font-weight: 300;
         font-family: monospace;
