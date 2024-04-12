@@ -39,13 +39,13 @@ st.write('Реализация численных методов для приб
 with st.expander("Код"):
     st.code("""from dolfin import *
 from matplotlib import pyplot
-parameters [" plotting_backend "] = " matplotlib "
-mesh2D = UnitSquareMesh ( 16 , 16 )
-mesh3D = UnitCubeMesh ( 16 , 16 , 16 )
-plot ( mesh2D )
-plot ( mesh3D )
-pyplot . show ()')""")
-    image = open('pages/pics/mesh.jpg', 'rb').read()
+parameters["plotting_backend"] = "matplotlib"
+mesh2D = UnitSquareMesh( 16 , 16 )
+mesh3D = UnitCubeMesh( 16 , 16 , 16 )
+plot(mesh2D)
+plot(mesh3D)
+pyplot.show ()""")
+image = open('pages/pics/mesh.jpg', 'rb').read()
 
     # Вставка изображения
     st.image(image, use_column_width=True)
