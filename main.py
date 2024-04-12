@@ -13,7 +13,7 @@ def wrap():
         font-weight: 300;
         font-family: monospace;
         }
-        [data-testid="stAppViewContainer]{
+        [data-testid="stAppViewContainer"]{
         background-color: #ffffff;
         font-weight: 300;
         font-family: monospace;
